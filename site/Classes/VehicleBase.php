@@ -4,6 +4,25 @@ abstract class VehicleBase
 {
     public $color;
     public $type;
+    public $operator;
+
+
+    /**
+     * @param $operator
+     * @return mixed
+     */
+    abstract public function setOperator($operator)
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    abstract public function getOperator(){
+        return $this->operator;
+    }
 
     /**
      * @return mixed
