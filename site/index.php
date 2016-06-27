@@ -74,4 +74,4 @@ if($airliner->hasBusinessClass){
     $echo .= " but also has a business class";
 }else null;
 
-echo $echo;
+echo $echo . ' and it\'s ' . Plane::getOPStatus();
