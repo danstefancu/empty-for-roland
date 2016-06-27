@@ -1,6 +1,6 @@
 <?php
 
-class VehicleBase
+abstract class VehicleBase
 {
     public $color;
     public $type;
