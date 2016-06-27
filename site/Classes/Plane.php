@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Car.php';
-require_once '../Traits/airliner.php';
+require_once './Traits/airliner.php';
 
 class Plane extends Car
 {
