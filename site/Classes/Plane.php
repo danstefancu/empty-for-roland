@@ -3,7 +3,7 @@
 require_once 'VehicleBase.php';
 require_once './Traits/Jet.php';
 
-class Plane extends VehicleBase
+class Plane extends VehicleBase implements AircraftInterface
 {
     use Jet;
     public $capacity;

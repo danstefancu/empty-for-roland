@@ -1,6 +1,6 @@
 <?php
 
 interface AircraftInterface{
-    public function setOperator();
+    public function setOperator($operator);
     public function getOperator();
 }
