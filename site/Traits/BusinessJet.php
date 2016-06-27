@@ -22,4 +22,14 @@ trait BusinessJet{
         $this->seatCapacity = $seatCapacity;
         return $this;
     }
+
+    /**
+     * @param $range
+     * @return $this
+     */
+    public function setRange($range)
+    {
+        $this->range = $range;
+        return $this;
+    }
 }
