@@ -4,6 +4,23 @@ class VehicleBase
 {
     public $color;
     public $type;
+    public $operator;
+
+    /**
+     * @param mixed $operator
+     */
+    public function setOperator($operator)
+    {
+        $this->operator = $operator;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOperator()
+    {
+        return $this->operator;
+    }
 
     /**
      * @return mixed

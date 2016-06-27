@@ -1,11 +1,9 @@
 <?php
 
 require_once 'VehicleBase.php';
-require_once '../Traits/airliner.php';
 
 class Train extends VehicleBase
 {
-    use Airliner;
     public $size;
 
     /**

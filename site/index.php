@@ -25,7 +25,7 @@ echo "But my train is " . $train->getColorInfo() . PHP_EOL .$train->getType() . 
 
 $plane = new Plane();
 
-$plane->setColor("White")->setType('Boeing 747')->setCapacity(650)->setColorNumber(24)->setHasFirstClass(true)->setHasBusinessClass(false)->setOperator("yes");
+$plane->setColor("White")->setType('Boeing 747')->setCapacity(650)->setColorNumber(24)->setHasFirstClass(true)->setHasBusinessClass(true)->setOperator("yes");
 
 $echo = "Last but not least, my airplane is " . $plane->getColorInfo() . PHP_EOL . $plane->getType() . " and it's capacity is " . $plane->getCapacity();
 if ($plane->hasFirstClass){
@@ -38,7 +38,7 @@ if($plane->hasBusinessClass){
 echo $echo;
 
 $car->hasSeatBelt = "no";
-echo "<br /> Seat belt on: " . $car->hasSeatBelt;
+echo "<br /> Seat belt on: " . $car->hasSeatBelt . "<br /><br />";
 
 $car->model = "Alfa";
 
@@ -60,4 +60,18 @@ $orderedList = new OrderedList();
 echo $orderedList($car());
 
 $suv = clone $car;
-echo "<br />" . $suv->getType();
+echo "<br />" . $suv->getType() . "<br />";
+
+
+$airliner = new Plane();
+$airliner->setColor("Red")->setType('Canada Airliner')->setCapacity(250)->setColorNumber(21)->setHasFirstClass(false)->setHasBusinessClass(true)->setOperator("yes");
+
+$echo = "My second airplane is: " . $airliner->getColorInfo() . PHP_EOL . $airliner->getType() . " and it's capacity is " . $airliner->getCapacity();
+if ($airliner->hasFirstClass){
+    $echo .= " and has a first class";
+}else null;
+if($airliner->hasBusinessClass){
+    $echo .= " but also has a business class";
+}else null;
+
+echo $echo;
