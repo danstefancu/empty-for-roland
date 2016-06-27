@@ -9,6 +9,7 @@ class Plane extends Car
 
     use Airliner,BusinessJet{
      BusinessJet::setOperator insteadof Airliner;
+        Airliner::setOperator as setOP;
     }
     public $capacity;
 
