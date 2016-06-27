@@ -2,11 +2,14 @@
 
 require_once 'Car.php';
 require_once './Traits/airliner.php';
+require_once './Traits/BusinessJet.php';
 
 class Plane extends Car
 {
 
-    use Airliner;
+    use Airliner,BusinessJet{
+     BusinessJet::setOperator insteadof Airliner;
+    }
     public $capacity;
 
     /**
