@@ -1,12 +1,30 @@
 <?php
 
-require_once 'Car.php';
+require_once 'VehicleBase.php';
 require_once './Traits/Jet.php';
 
-class Plane extends Car
+class Plane extends VehicleBase
 {
     use Jet;
     public $capacity;
+
+    /**
+     * @param $operator
+     * @return $this
+     */
+    public function setOperator($operator)
+    {
+        $this->operator = $operator;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOperator()
+    {
+        return $this->operator;
+    }
 
     /**
      * @param $capacity
