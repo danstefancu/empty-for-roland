@@ -11,7 +11,7 @@ abstract class VehicleBase
      * @param $operator
      * @return mixed
      */
-    abstract public function setOperator($operator)
+     public function setOperator($operator)
     {
         $this->operator = $operator;
         return $this;
@@ -20,7 +20,7 @@ abstract class VehicleBase
     /**
      * @return mixed
      */
-    abstract public function getOperator(){
+     public function getOperator(){
         return $this->operator;
     }
 
