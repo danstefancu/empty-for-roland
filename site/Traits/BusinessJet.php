@@ -14,5 +14,12 @@ trait BusinessJet{
         return $this;
     }
 
-
+    /**
+     * @param $seatCapacity
+     * @return $this
+     */
+    public function setSeatCapacity($seatCapacity){
+        $this->seatCapacity = $seatCapacity;
+        return $this;
+    }
 }
