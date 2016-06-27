@@ -27,4 +27,20 @@ trait Jet{
     {
         return self::$oPStatus;
     }
+
+    /**
+     * @param mixed $operationBase
+     */
+    public function setOperationBase($operationBase)
+    {
+        $this->operationBase = $operationBase;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOperationBase()
+    {
+        return $this->operationBase;
+    }
 }
